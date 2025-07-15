@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Cụ Lấy ID Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Công Cụ Lấy ID Facebook</h1>
+            </div>
+        </header>
+        
+        <main>
+            <div class="tab-container">
+                <div class="tab active" data-tab="website">
+                    <span class="tab-icon">🏢</span>
+                    <span>Website</span>
+                </div>
+                <div class="tab" data-tab="group">
+                    <span class="tab-icon">👥</span>
+                    <span>Group</span>
+                </div>
+                <div class="tab" data-tab="fanpage">
+                    <span class="tab-icon">📄</span>
+                    <span>Fanpage</span>
+                </div>
+                <div class="tab" data-tab="youtube">
+                    <span class="tab-icon">✓</span>
+                    <span>Youtube</span>
+                </div>
+            </div>
+            
+            <div class="content-container">
+                <div class="description">
+                    <p>Công cụ miễn phí giúp bạn dễ dàng lấy UID Facebook một cách dễ dàng.</p>
+                </div>
+                
+                <div class="input-section">
+                    <label for="facebook-link">Link facebook</label>
+                    <input 
+                        type="text" 
+                        id="facebook-link" 
+                        placeholder="Nhập Link facebook cần lấy ID"
+                        class="input-field"
+                    >
+                </div>
+                
+                <button class="get-id-btn" onclick="getID()">Lấy ID</button>
+                
+                <div id="result" class="result-section" style="display: none;">
+                    <h3>Kết quả:</h3>
+                    <div id="id-result" class="id-result"></div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <span>©</span>
+                <span class="footer-links">
+                    <a href="#faq">FAQ</a>
+                    <span>•</span>
+                    <a href="#share">⚡</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
